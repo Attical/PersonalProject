@@ -1,9 +1,15 @@
 import PySimpleGUI as sg
 
+
+with open("ToDoList.txt", "r") as file:
+    data = file.read()
+    print(data)
+
 sg.theme('DarkAmber')   # Add a touch of color
 # All the stuff inside your window.
-layout = [  [sg.Text('Some text on Row 1')],
-            [sg.Text('Enter something on Row 2'), sg.InputText()],
+layout = [  [sg.Text('Your todo list:')],
+            [sg.Text(data)], #tasks will go here
+            [sg.Text('Input new tasks:'), sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
 # Create the Window
