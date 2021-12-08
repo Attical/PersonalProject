@@ -28,3 +28,5 @@ while True:
     window['-TEXT-'].update(data)
 
 window.close()
+
+#todo, make a way of removing tasks that are done/unwanted
