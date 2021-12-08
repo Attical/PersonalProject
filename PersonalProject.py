@@ -22,4 +22,9 @@ while True:
     print('You entered ', values[0])
     print(values[0])
 
+    with open("ToDoList.txt", "a") as file:
+        file.write("\n") #this works as intended if the cursor is set to end of text instead of on a new line
+        file.write(values[0])
+
+
 window.close()
