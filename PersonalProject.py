@@ -29,4 +29,4 @@ while True:
 
 window.close()
 
-#todo, make a way of removing tasks that are done/unwanted
+#next thing to do, make a way of removing tasks that are done/unwanted
